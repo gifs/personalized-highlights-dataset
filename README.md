@@ -126,7 +126,7 @@ on the 850 test videos which have `is_last==True`.
 If you use this dataset, please cite:
 
 ```
-@misc{gygli2017highlights,
+@misc{gifs2017highlights,
 author = {Michael Gygli and Ana García del Molino},
 title = {{PHD$^{2}$: A dataset for personalized highlight detection}},
 howpublished= {\url{https://github.com/gifs/personalized-highlights-dataset}}
