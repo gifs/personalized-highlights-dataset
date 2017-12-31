@@ -1,6 +1,6 @@
-# A dataset for personalized highlight detection
+# PHD<sup>2</sup>: A dataset for personalized highlight detection
 
-This repository contains a dataset with personalized highlight information.
+This repository contains PHD<sup>2</sup>, a dataset with personalized highlight information.
 As such, it allows to train highlight detection models that use
 information about the user, when making predictions.
 The dataset contains information from more than __13'000 users__. 
@@ -11,10 +11,10 @@ video to its most interesting moments. Even though this
 notion of *interestingness is subjective*, existing works only
 learn *generic highlight models*, which limits their potential
 performance. To achieve better performance, models need to rely on
-information about the user for which is should extract highlights.
+information about the user for which it should extract highlights.
 
 Previously, such data was unavailable in the research community,
-which prevented the research on personalized highlight detection model.
+which prevented the research on personalized highlight detection models.
 Thus, at gifs.com, we created a large-scale dataset of users
 and the GIFs they created, which provides an accurate indication
 of their interests.
@@ -38,7 +38,7 @@ of that specific user.
 The data consists of YouTube videos, from which gifs.com
 users manually extracted their highlights, by creating GIFs
 from a segment of the full video.
-Thus, the dataset is similar to that of [1], which two major differences.
+Thus, the dataset is similar to that of [1], with two major differences.
 1. Each selection is associated with a user, which is what allows
 personalization.
 2. [1] used visual matching to find the position in the video
@@ -112,7 +112,7 @@ H9tPfQNXFy8,128.607,8.75021,12999,143.0,False
 ```
  
 ### Using the dataset
-For using the dataset, you need to first download the videos from YouTube.
+For using the dataset, you need to first get the videos from YouTube.
 We recommend using [pafy](http://pythonhosted.org/Pafy/) or
 [youtube-dl](https://rg3.github.io/youtube-dl/) for this.
 
@@ -128,7 +128,7 @@ If you use this dataset, please cite:
 ```
 @misc{gygli2017highlights,
 author = {Michael Gygli and Ana García del Molino},
-title = {{A dataset for personalized highlight detection}},
+title = {{PHD$^{2}$: A dataset for personalized highlight detection}},
 howpublished= {\url{https://github.com/gifs/personalized-highlights-dataset}}
 ```
 
