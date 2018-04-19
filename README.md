@@ -139,7 +139,7 @@ If you use this dataset, please cite our paper:
 ```
 
 ## References
-[1] (PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. A. García del Molino, M. Gygli. arXiv 2018)[https://arxiv.org/abs/1804.06604]
+[1] PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. A. García del Molino, M. Gygli. arXiv 2018. https://arxiv.org/abs/1804.06604
 
 [2] Video2GIF: Automatic Generation of Animated GIFs from Video.  M. Gygli, Y. Song, L. Cao. CVPR 2016
 
