@@ -20,7 +20,7 @@ and the GIFs they created, which provides an accurate indication
 of their interests.
 On this data, models can be trained to make personalized,
 and thus more accurate, predictions.
-Indeed, as we show in our paper [1], making models personalized improves the performance over generic highlight detection
+Indeed, as we show in our [paper](https://arxiv.org/abs/1804.06604) [1], making models personalized improves the performance over generic highlight detection
 models such as [2] by a significant margin.
 
 We are happy to publicly release this dataset to the research community
@@ -139,7 +139,7 @@ If you use this dataset, please cite our paper:
 ```
 
 ## References
-[1] PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. A. García del Molino, M. Gygli. arXiv 2018
+[1] (PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. A. García del Molino, M. Gygli. arXiv 2018)[https://arxiv.org/abs/1804.06604]
 
 [2] Video2GIF: Automatic Generation of Animated GIFs from Video.  M. Gygli, Y. Song, L. Cao. CVPR 2016
 
