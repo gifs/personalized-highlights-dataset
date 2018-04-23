@@ -1,4 +1,4 @@
-# PHD<sup>2</sup>: A dataset for personalized highlight detection
+# PHD<sup>2</sup>: Personalized Highlight Detection Dataset
 
 This repository contains PHD<sup>2</sup>, a dataset with personalized highlight information.
 As such, it allows to train highlight detection models that use
