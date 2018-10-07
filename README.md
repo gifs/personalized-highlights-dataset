@@ -1,4 +1,4 @@
-# PHD<sup>2</sup>: A dataset for personalized highlight detection
+# PHD<sup>2</sup>: Personalized Highlight Detection Dataset
 
 This repository contains PHD<sup>2</sup>, a dataset with personalized highlight information.
 As such, it allows to train highlight detection models that use
@@ -20,9 +20,8 @@ and the GIFs they created, which provides an accurate indication
 of their interests.
 On this data, models can be trained to make personalized,
 and thus more accurate, predictions.
-Indeed, our internal experiments have shown that
-making models personalized improves the performance over generic highlight detection
-models such as [1] by a significant margin.
+Indeed, as we show in our [paper](https://arxiv.org/abs/1804.06604) [1], making models personalized improves the performance over generic highlight detection
+models such as [2] by a significant margin.
 
 We are happy to publicly release this dataset to the research community
 and hope that it will spur research on personalized
@@ -57,6 +56,10 @@ You can find it [here](testing.csv).
 ### Dataset example
 ![example users in our dataset](./dataset_example.png)
 
+### More information
+For more information on the dataset, see our paper [1].
+
+## Using the dateset
 ### Data format
 The data is stored in csv files.
 They have the following fields:
@@ -111,26 +114,34 @@ WSEsOJQJ990,0.0,2.08,12999,3.0,False
 H9tPfQNXFy8,128.607,8.75021,12999,143.0,False
 ```
  
-### Using the dataset
+### Downloading the videos
 For using the dataset, you need to first get the videos from YouTube.
 We recommend using [pafy](http://pythonhosted.org/Pafy/) or
 [youtube-dl](https://rg3.github.io/youtube-dl/) for this.
 
-We encourage using mAP and nMSD as the performance metrics.
-You can find their implementation [here](https://github.com/gyglim/video2gif_dataset).
-For reference, the public model of [1] obtains
-`mAP=15.69%` and `nMSD=42.59%`
-on the 850 test videos which have `is_last==True`.
+### Evaluation metrics
+We encourage using mAP, nMSD and Recall as the performance metrics.
+For reference, our model obtains `mAP=16.68%`, `nMSD=40.26%` and `Recall@5=30.71%`, while the public model of [1] obtains
+`mAP=15.69%`, `nMSD=42.59%` and `Recall@5=27.28%` on the 850 test videos which have `is_last==True`.
+You can find the implementation on mAP and nMSD [here](https://github.com/gyglim/video2gif_dataset).
 
 ## Citation
-If you use this dataset, please cite:
+If you use this dataset, please cite our paper:
 
 ```
-@misc{gifs2017highlights,
-author = {Michael Gygli and Ana García del Molino},
-title = {{PHD$^{2}$: A dataset for personalized highlight detection}},
-howpublished= {\url{https://github.com/gifs/personalized-highlights-dataset}}
+@inproceedings{gifs2017highlights,
+   author = {Garcia del Molino, Ana and Gygli, Michael},
+   title = {{PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation}},
+   booktitle = {Proceedings of the 2018 ACM on Multimedia Conference},
+   series = {MM '18},
+   year = {2018},
+   publisher = {ACM},
+   address = {New York, NY, USA}
+} 
 ```
 
 ## References
-[1] Video2GIF: Automatic Generation of Animated GIFs from Video.  M. Gygli, Y. Song, L. Cao. CVPR 2016
+[1] PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. A. García del Molino, M. Gygli. ACM Multimedia 2018. https://arxiv.org/abs/1804.06604
+
+[2] Video2GIF: Automatic Generation of Animated GIFs from Video.  M. Gygli, Y. Song, L. Cao. CVPR 2016
+https://arxiv.org/abs/1605.04850
